@@ -1,6 +1,6 @@
 from django.db import models
 
-class cursos(models.Model):
+class Curso(models.Model):
     nombre= models.CharField(max_length=40)
     camada= models.IntegerField()
 

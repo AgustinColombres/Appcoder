@@ -4,13 +4,12 @@
 <h3>Formulario para cursos</h3>
 {% endblock %}
 {% block contenidoQueCambia %}
-<h3>Pagina de inicio</h3>
-{% endblock %}
-<form action="/cursoFormulario/" method="POST"
+<form action="{% url 'cursoFormulario' %}" method="POST"> {% csrf_token%}
+    <hi> Ingrese los datos del Curso</hi>
+    <table>
+        {{miFormulario.as_table}}
+    </table>
     
-    <p>Curso: <input type="text" name="curso"></p>
-
-    <p>Camada: <input type="number" name="camada"></p>
-
-    <input type="submit" value="Enviar">
-
+    <input type="submit" value="Enviar formulario hecho con API">
+</form> 
+{% endblock %}
