@@ -1,0 +1,16 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+{% block section_name %}
+<h3>Formulario para cursos</h3>
+{% endblock %}
+{% block contenidoQueCambia %}
+<h3>Pagina de inicio</h3>
+{% endblock %}
+<form action="/cursoFormulario/" method="POST"
+    
+    <p>Curso: <input type="text" name="curso"></p>
+
+    <p>Camada: <input type="number" name="camada"></p>
+
+    <input type="submit" value="Enviar">
+
