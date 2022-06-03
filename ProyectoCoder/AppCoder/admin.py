@@ -3,7 +3,7 @@ from.models import *
 
 admin.site.register(Curso)
 
-admin.site.register(profesores)
+admin.site.register(Profesor)
 
 admin.site.register(estudiantes)
 
