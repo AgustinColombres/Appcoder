@@ -1,0 +1,15 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+{% block section_name %}
+<h3>estudiantes</h3>
+{% endblock %}
+{% block contenidoQueCambia %}
+<h3>Sección de estudiantes</h3>
+<p> NOMBRE:{{Estudiante.nombre}}</p>
+<p> APELLIDO:{{Estudiante.apellido}}</p>
+<p> EMAIL:{{Estudiante.email}}</p>
+
+<p> 
+    <a href="{% url estudiante_listar %}">Volver a la lista de estudiantes</a>
+</p>
+{% endblock %}

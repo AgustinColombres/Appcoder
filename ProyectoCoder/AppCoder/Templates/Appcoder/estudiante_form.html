@@ -5,6 +5,9 @@
 {% endblock %}
 {% block contenidoQueCambia %}
 <h3>Sección de estudiantes</h3>
-{% for estudiante in object_list %}
-<li>{{ estudiante }}</li>
+<form method="POST">{% csrf_token %}
+    Edita al estudiante 
+    {{form.as_p}}
+    <input type="submit" value="Enviar"
+{% endfor %}
 {% endblock %}

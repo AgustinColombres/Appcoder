@@ -5,6 +5,8 @@
 {% endblock %}
 {% block contenidoQueCambia %}
 <h3>Sección de estudiantes</h3>
-{% for estudiante in object_list %}
-<li>{{ estudiante }}</li>
+<form method="POST">{% csrf_token %}
+    Estas seguro de Eliminar al Estudiante "{{object}}"
+    <input type="submit" value="SI/>"
+{% endfor %}
 {% endblock %}

@@ -1,8 +1,12 @@
 {% extends "AppCoder/padre.html" %}
 {% load static %}
-{% block section_name %}
-<h3>cursos</h3>
-{% endblock %}
 {% block contenidoQueCambia %}
-<h3>Pagina de cursos</h3>
+<h3>Listado de cursos</h3>
+{% for curso in cursos%}
+<li>{{curso}}</li>
+<button>
+<a href="{% url 'eliminarCurso' camada %}">Eliminar</a>
+<a href="{% url 'editarCurso' camada %}">Editar</a>
+</button>
+{%endfor%}
 {% endblock %}
