@@ -1,12 +1,11 @@
 {% extends "AppCoder/padre.html" %}
 {% load static %}
 {% block section_name %}
-<h3>estudiantes</h3>
+<h3>Registro de usuario</h3>
 {% endblock %}
 {% block contenidoQueCambia %}
-<h3>Sección de estudiantes</h3>
+<h3>Ingrese Usuario y Contraseña</h3>
 <form method="POST">{% csrf_token %}
-    Edita al estudiante 
     {{form.as_p}}
-    <input type="submit" value="Enviar"
+    <button type="submit">Registrar</button>
 {% endblock %}

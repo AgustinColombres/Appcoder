@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nombre', models.CharField(max_length=30)),
-                ('apeliido', models.CharField(max_length=30)),
+                ('apellido', models.CharField(max_length=30)),
                 ('email', models.EmailField(max_length=254)),
             ],
         ),
@@ -42,7 +42,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nombre', models.CharField(max_length=30)),
-                ('apeliido', models.CharField(max_length=30)),
+                ('apellido', models.CharField(max_length=30)),
                 ('email', models.EmailField(max_length=254)),
                 ('profesion', models.CharField(max_length=30)),
             ],
